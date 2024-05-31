@@ -1,0 +1,8 @@
+import time
+def generate_account_code(username):
+     unique_sequence= int(time.time())
+     return f"{username[:3].upper()}{unique_sequence}"
+username = "Diwakar"
+account_code = generate_account_code(username)
+print("generate account code :",account_code)
+ 
